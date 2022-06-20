@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <h2 class="tituloDebora">Debora's Bakery</h2>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -19,35 +20,44 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Presupuestos</h1>
+    <main class="recuadroPresu">
+        <h1 class="formTitle">Presupuestos</h1>
         <form action="">
             <fieldset>
-                <Legend>Presupuestos y comentarios</Legend>
-                    <span>Tu bello nombre</span>
-                    <label for="nombre">
-                        <input type="text" name="nombre" id="" placeholder="Nombre">
-                    </label>
-                    <label for="apellido">
-                        <input type="text" name="nombre" id="" placeholder="Apellido">
-                    </label>
-                    <span>Contacto</span>
-                    <label for="telefono-de-contacto">
-                        <input type="tel" name="telefono" id="" placeholder="Telefono">
-                    </label>
-                    <label for="e-mail">
-                        <input type="tel" name="e-mail" id="" placeholder="Correo electronico">
-                    </label>
-                    <label for="presupuesto"></label>
-                    <span>Presupuesto</span>
-                        <input type="radio" name="motivo" value="presupuesto">
-                    <label for="comentario"></label>
-                    <span>Comentario</span>
-                        <input type="radio" name="motivo" value="comentario">
-                    <span>Lo que quieres saber</span>
-                    <label for="que-necesitas">
-                        <textarea name="" placeholder="Dejanos todo los detalles de tu comentario"></textarea>
-                    </label>
+                <legend class="espaciosLegend"> Presupuestos y comentarios</legend>
+                    <div>
+                        <span>Tu bello nombre</span>
+                        <label for="nombre">
+                            <input type="text" name="nombre" class="input" placeholder="Nombre">
+                        </label>
+                        <label for="apellido">
+                            <input type="text" name="nombre" class="input" placeholder="Apellido">
+                        </label>
+                    </div>
+                    <div>
+                        <span>Contacto</span>
+                        <label for="telefono-de-contacto">
+                            <input type="tel" name="telefono" class="input" placeholder="Telefono">
+                        </label>
+                        <label for="e-mail">
+                            <input type="tel" name="e-mail" class="input" placeholder="Correo electronico">
+                        </label>
+                    </div>
+                    <div>
+                        <span>Presupuesto</span>
+                        <label for="presupuesto" class="input">
+                            <input type="radio" name="motivo" value="presupuesto">
+                        </label>
+                        <span>Comentario</span>
+                        <label for="comentario" class="input">
+                            <input type="radio" name="motivo" value="comentario">
+                        </label>
+                        </div>
+                    <div>
+                        <label for="que-necesitas">
+                            <textarea name="" class="cuadroTexto" placeholder="Dejanos todo los detalles de tu comentario"></textarea>
+                        </label>
+                    </div>
                     <section>
                         <label for="boton-enviar">
                             <input type="submit" value="Enviar">
@@ -55,7 +65,7 @@
                         </label>
                     </section>
             </fieldset>
-            </form>
+        </form>
     </main>
     <footer>
         <p>Horneado con mucho amor</p>
