@@ -12,7 +12,6 @@ body{
     background-position: center;
     background-attachment: fixed;
     display: flex;
-    flex-direction: column;
     min-height: 100vh;
     font-family: 'Lora', serif;
 }
@@ -37,10 +36,27 @@ ol{
     list-style-type: none;
 }
 
+.header--ul{
+    display: flex;
+    position: right;
+    margin: 0 3em;
+    padding: 0 1em;
+    width: 100%;
+}
+
+.header--txt--right{
+    display: block;
+    padding: 0 40px;
+    float: right;
+
+}
+
 ul li a{
     text-decoration: none;
     color: white;
     font-size: 16px;
+    float: left;
+    display: inline;
 }
 
 main{
@@ -50,9 +66,10 @@ main{
 
 .tituloDebora{
     font-size: 24px;
-    float: left;
+    padding: 0 80px;
+    margin: 10px;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .textoBienvenida{
@@ -66,20 +83,17 @@ main{
     margin: auto;
     width: 90%;
     max-width: 400px;
-    padding: 5.5em 3em;
+    padding: 2.5em 3em;
     border-radius: 5%;
     text-align: center;
+    border-style: solid;
+    position: relative;
 }
 
 .formTitle{
     font-size: 24px;
     margin-bottom: .5em;
     font-weight: 400;
-}
-
-.espaciosLegend{
-    width: 10px;
-    height: 10px;
 }
 
 .input{
