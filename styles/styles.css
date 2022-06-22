@@ -160,21 +160,22 @@ main{
     margin-left: 59px;
     font-weight: normal;
     margin-top: 1em;
-    text-align: left;
+    text-align: center;
 }
 
 .sub__tittle2{
     font-size: 20px;
     margin-bottom: 2em;
-    margin-left: 59px;
     font-weight: normal;
     margin-top: 1em;
+    text-align: center;
 }
 
 .images--size{
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 20px;
+    margin: 0 20px 0 20px;
 }
 
 .p__cuadro{
