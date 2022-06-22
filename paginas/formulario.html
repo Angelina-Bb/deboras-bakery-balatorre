@@ -9,63 +9,66 @@
 </head>
 <body>
     <header>
-        <h2 class="tituloDebora">Debora's Bakery</h2>
+        <h2 class="logo__debora">Debora's Bakery</h2>
         <nav>
             <ul class="header--ul">
                 <li><a href="../index.html" class="header--txt--right">Inicio</a></li>
                 <li><a href="./acercade.html" class="header--txt--right">Nuestra pasteleria</a></li>
                 <li><a href="./cartilla.html" class="header--txt--right">Nuestros sabores</a></li>
-                <li><a href="./galeria.html" class="header--txt--right">Dulce Galeria</a></li>
+                <li><a href="./galeria.html" class="header--txt--right">Dulce galeria</a></li>
                 <li><a href="./formulario.html" class="header--txt--right">Presupuestos</a></li>
             </ul>
         </nav>
     </header>
-    <main class="recuadroPresu">
-        <h1 class="formTitle">Presupuestos</h1>
-        <form action="">
-            <fieldset>
-                <legend> Presupuestos y comentarios</legend>
-                    <div>
-                        <span>Tu bello nombre</span>
-                        <label for="nombre">
-                            <input type="text" name="nombre" class="input" placeholder="Nombre">
-                        </label>
-                        <label for="apellido">
-                            <input type="text" name="nombre" class="input" placeholder="Apellido">
-                        </label>
-                    </div>
-                    <div>
-                        <span>Contacto</span>
-                        <label for="telefono-de-contacto">
-                            <input type="tel" name="telefono" class="input" placeholder="Telefono">
-                        </label>
-                        <label for="e-mail">
-                            <input type="tel" name="e-mail" class="input" placeholder="Correo electronico">
-                        </label>
-                    </div>
-                    <div>
-                        <span>Presupuesto</span>
-                        <label for="presupuesto" class="input">
-                            <input type="radio" name="motivo" value="presupuesto">
-                        </label>
-                        <span>Comentario</span>
-                        <label for="comentario" class="input">
-                            <input type="radio" name="motivo" value="comentario">
-                        </label>
-                        </div>
-                    <div>
-                        <label for="que-necesitas">
-                            <textarea name="" class="cuadroTexto" placeholder="Dejanos todo los detalles de tu comentario"></textarea>
-                        </label>
-                    </div>
+    <main class="cuadro__backg cuadro__backg--padding">
+        <h1 class="form__tittle">Presupuestos y comentarios</h1>
+        <div>
+            <form action="">
+                <div>
                     <section>
-                        <label for="boton-enviar">
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Limpiar">
-                        </label>
+                        <span>Tu bello nombre</span>
                     </section>
-            </fieldset>
-        </form>
+                    <label for="nombre">
+                        <input type="text" name="nombre" class="input" placeholder="Nombre">
+                    </label>
+                    <label for="apellido">
+                        <input type="text" name="nombre" class="input" placeholder="Apellido">
+                    </label>
+                </div>
+                <div>
+                    <section>
+                        <span>Contactos</span>
+                    </section>
+                    <label for="telefono">
+                        <input type="tel" name="telefono" class="input" placeholder="Telefono">
+                    </label>
+                    <label for="e-mail">
+                        <input type="tel" name="e-mail" class="input" placeholder="Correo electronico">
+                    </label>
+                </div>
+                <div class="inputs__textarea--margin">
+                    <span>Presupuesto</span>
+                    <label for="presupuesto">
+                        <input type="radio" name="motivo" value="presupuesto">
+                    </label>
+                    <span>Comentario</span>
+                    <label for="comentario">
+                        <input type="radio" name="motivo" value="comentario">
+                    </label>
+                </div>
+                <div>
+                    <label for="que-necesitas">
+                        <textarea name="" class="cuadro__texto" placeholder="Dejanos todo los detalles de tu comentario"></textarea>
+                    </label>
+                </div>
+                <section>
+                    <label for="boton-enviar">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </label>
+                </section>
+            </form>
+        </div>
     </main>
     <footer>
         <p>Horneado con mucho amor</p>

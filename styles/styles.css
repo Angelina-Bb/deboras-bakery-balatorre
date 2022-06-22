@@ -11,7 +11,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
     min-height: 100vh;
     font-family: 'Lora', serif;
 }
@@ -36,6 +35,10 @@ ol{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .header--ul{
     display: flex;
     position: right;
@@ -48,7 +51,6 @@ ol{
     display: block;
     padding: 0 40px;
     float: right;
-
 }
 
 ul li a{
@@ -64,36 +66,54 @@ main{
     font-size: 16px;
 }
 
-.tituloDebora{
+/* .texto__bienvenida{
+    margin-right: 5.5%;
+    margin-top: 10%;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: right;
+} */
+
+.texto__parrafo{
+    text-align: right;
+    margin-top: 14%;
+    margin-right: 5.5%;
+    margin-left: 50%;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.logo__debora{
     font-size: 24px;
     padding: 0 80px;
     margin: 10px;
     color: white;
-    font-weight: bold;
+    font-weight: 200;
 }
 
-.textoBienvenida{
-    text-align: right;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
-}
-.recuadroPresu{
-    background-color: #474747;
-    margin: auto;
+.cuadro__backg{
+    background-color: rgba(0, 0, 0, 0.5);
     width: 90%;
-    max-width: 400px;
-    padding: 2.5em 3em;
+    height: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 0%;
+    position: absolute;
     border-radius: 5%;
-    text-align: center;
-    border-style: solid;
-    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.formTitle{
+.cuadro__backg--padding{
+    text-align: center;
+}
+
+.form__tittle{
     font-size: 24px;
-    margin-bottom: .5em;
-    font-weight: 400;
+    margin-bottom: 2em;
+    font-weight: normal;
+    margin-top: 1em;
 }
 
 .input{
@@ -103,17 +123,24 @@ main{
     padding: .6em .3em;
     background: none;
     border: none;
+    background-color: rgb(217, 217, 217, 0.1);
+    border-radius: 5px;
     outline: none;
     border-bottom: 1px solid var(--color);
     font-family: 'Lora', serif;
 }
 
-.cuadroTexto{
+.inputs__textarea--margin{
+    margin: 25px 0 25px 0;
+}
+
+.cuadro__exto{
     width: 90%;
     height: 5em;
     padding: 1em;
     font-size: 14px;
-    background: rgb(180, 180, 180);
+    background: rgb(217, 217, 217, 0.4);
+    border-radius: 20px;
     border: none;
 }
 
@@ -124,7 +151,6 @@ footer{
     font-size: 16px;
     bottom: 0;
     text-align: center;
-    margin-top: auto;
     background-color: rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 1em 0;
