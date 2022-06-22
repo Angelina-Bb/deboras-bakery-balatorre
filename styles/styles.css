@@ -134,7 +134,7 @@ main{
     margin: 25px 0 25px 0;
 }
 
-.cuadro__exto{
+.cuadro__texto{
     width: 90%;
     height: 5em;
     padding: 1em;
@@ -142,6 +142,7 @@ main{
     background: rgb(217, 217, 217, 0.4);
     border-radius: 20px;
     border: none;
+    background-attachment: fixed;
 }
 
 footer{
