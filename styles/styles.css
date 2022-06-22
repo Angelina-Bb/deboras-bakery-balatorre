@@ -102,7 +102,7 @@ main{
     position: absolute;
     border-radius: 5%;
     border-radius: 20px;
-    overflow: hidden;
+    overflow: hidden scroll;
 }
 
 .cuadro__backg--padding{
@@ -116,9 +116,13 @@ main{
     margin-top: 1em;
 }
 
+.contacto--margin{
+    margin-top: 20px;
+}
+
 .input{
     margin-top: 2em;
-    width: 95%;
+    width: 50%;
     font-size: 14px;
     padding: .6em .3em;
     background: none;
@@ -134,8 +138,13 @@ main{
     margin: 25px 0 25px 0;
 }
 
+
+.input__presu--margin{
+    margin-right: 5em;
+}
+
 .cuadro__texto{
-    width: 90%;
+    width: 49%;
     height: 5em;
     padding: 1em;
     font-size: 14px;
@@ -143,6 +152,38 @@ main{
     border-radius: 20px;
     border: none;
     background-attachment: fixed;
+}
+
+.sub__tittle{
+    font-size: 20px;
+    margin-bottom: 2em;
+    margin-left: 59px;
+    font-weight: normal;
+    margin-top: 1em;
+    text-align: left;
+}
+
+.sub__tittle2{
+    font-size: 20px;
+    margin-bottom: 2em;
+    margin-left: 59px;
+    font-weight: normal;
+    margin-top: 1em;
+}
+
+.images--size{
+    height: 150px;
+    width: 150px;
+}
+
+.p__cuadro{
+    font-size: 14px;
+    margin-bottom: 2em;
+    margin-left: 59px;
+    margin-right: 50%;
+    font-weight: normal;
+    margin-top: 1em;
+    text-align: left;
 }
 
 footer{
