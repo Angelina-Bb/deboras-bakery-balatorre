@@ -95,6 +95,10 @@ main{
     font-size: 16px;
 }
 
+.parrafo--color{
+    color: rgb#dadadada;
+}
+
 .cuadro__backg{
     background-color: rgba(0, 0, 0, 0.5);
     width: 90%;
