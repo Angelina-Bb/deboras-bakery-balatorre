@@ -98,6 +98,8 @@ main{
 
 .parrafo--color{
     color: rgb#dadadada;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cuadro__backg{
@@ -289,6 +291,12 @@ main{
     .text--size{
         font-size: 16px;
     }
+    .texto__bienvenida{
+        font-size: 22px;
+    }
+    .texto__parrafo{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -326,6 +334,12 @@ main{
     }
     .text--size{
         font-size: 12px;
+    }
+    .texto__bienvenida{
+        font-size: 20px;
+    }
+    .texto__parrafo{
+        font-size: 13px;
     }
 }
 
