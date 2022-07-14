@@ -192,17 +192,29 @@ main{
  /* Galeria */
 
 .galeria__general{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 2em;
+    grid-template-columns: repeat(6,auto);
+    grid-auto-rows: 200px;
+/*     grid-template-areas: 
+    " titulo titulo titulo titulo titulo titulo"
+    " torta torta torta torta torta torta"
+    " img1 img2 img3 img4 img5 img6"
+    " cupcake cupcake cupcake cupcake cupcake cupcake"
+    " img7 img8 img9 img10 img11 img12"
+    " trufas trufas trufas trufas trufas trufas"
+    " img13 img14 img15 img16 img17 img18"
+    ; */
+    gap: .8em;
 }
 
+/* analizare despúes si usare la clase "gal--img"*/
 .galeria__titulo--centro{
-    grid-column: 1/7;
+    grid-column: 1/-1;
 }
 
-.galeria--flex{
-    grid-column: 1/7;
+.gal__title--position{
+    grid-column: 1/-1;
 }
 
 .images--size{
@@ -210,6 +222,39 @@ main{
     width: 200px;
     border-radius: 20px;
 }
+
+.galeria__picture{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.galeria__picture::before{
+    content:"Cick aqui";
+    position: absolute;
+/*     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    height: 200px;
+    width: 200px;
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 20px;
+    transform: translate(100%);
+    transition: transform 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.galeria__picture:hover::before{
+    transform: translate(0%);
+}
+
 .p__cuadro{
     font-size: 14px;
     margin-bottom: 2em;
