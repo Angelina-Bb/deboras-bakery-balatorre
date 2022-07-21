@@ -5,73 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debora's Bakery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
         <h2 class="logo__debora">Debora's Bakery</h2>
-        <nav>
-            <ul class="header--ul">
-                <li><a href="../index.html" class="header--txt--right">Inicio</a></li>
-                <li><a href="./acercade.html" class="header--txt--right">Nuestra pasteleria</a></li>
-                <li><a href="./cartilla.html" class="header--txt--right">Nuestros sabores</a></li>
-                <li><a href="./galeria.html" class="header--txt--right">Dulce galeria</a></li>
-                <li><a href="./formulario.html" class="header--txt--right">Presupuestos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <label for="menu" class="menu__label">
+                <img src="../recursos/menu.svg" class="menu__icon">
+            </label>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link nav__trns" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav__trns" href="./acercade.html">Nuestra pasteleria</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav__trns" href="./cartilla.html">Nuestros sabores</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav__trns" href="./galeria.html">Dulce Galeria</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav__trns" href="./formulario.html">Presupuesto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main class="cuadro__backg cuadro__backg--padding">
-        <h1 class="form__tittle">Presupuestos y comentarios</h1>
-        <div>
-            <form action="">
-                <div>
-                    <section>
-                        <span>Tu bello nombre</span>
-                    </section>
-                    <label for="nombre">
-                        <input type="text" name="nombre" class="input" placeholder="Nombre">
-                    </label>
-                    <label for="apellido">
-                        <input type="text" name="nombre" class="input" placeholder="Apellido">
-                    </label>
-                </div>
-                <div>
-                    <section class="contacto--margin">
-                        <span>Contactos</span>
-                    </section>
-                    <label for="telefono">
-                        <input type="tel" name="telefono" class="input" placeholder="Telefono">
-                    </label>
-                    <label for="e-mail">
-                        <input type="tel" name="e-mail" class="input" placeholder="Correo electronico">
-                    </label>
-                </div>
-                <div class="inputs__textarea--margin">
-                    <span>Presupuesto</span>
-                    <label for="presupuesto">
-                        <input type="radio" name="motivo" value="presupuesto" class="input__presu--margin">
-                    </label>
-                    <span>Comentario</span>
-                    <label for="comentario">
-                        <input type="radio" name="motivo" value="comentario">
-                    </label>
-                </div>
-                <div>
-                    <label for="que-necesitas">
-                        <textarea name="" class="cuadro__texto" placeholder="Contanos todos los detalles de tu pedido o comentario."></textarea>
-                    </label>
-                </div>
-                <section>
-                    <label for="boton-enviar">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar">
-                    </label>
-                </section>
-            </form>
+        <div class="container">
+            <div class="">
+                <h1 class="form__tittle">Presupuestos y comentarios</h1>
+            </div>
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="col">Nombre</label>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control input" placeholder="Nombre">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control input" placeholder="Apellido">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Contacto</label>
+                        <input type="phone" class="form-control input" id="exampleFormControlInput1" placeholder="Telefono">
+                        <input type="email" class="form-control input" id="exampleFormControlInput1" placeholder="e-mail@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">¿Comentario o presupuesto?</label>
+                        <select class="form-control input" id="exampleFormControlSelect1">
+                        <option>Comentario</option>
+                        <option>Presupuesto</option>
+                        </select>
+                    </div>
+                    <!--Decidir cual de los input quedan mejor-->
+<!--                     <div class="form-check form-check-inline input__presu--margin">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Comentario</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Presupuesto</label>
+                    </div> -->
+                    <div class="form-group">
+                        <textarea class="form-control input" id="exampleFormControlTextarea1" rows="4" placeholder="Contanos todos los detalles."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="input__presu--position">
+                <button type="submit" class="input input--margin margin--right col">Enviar</button>
+                <button type="clear" class="input input--margin col">Limpiar</button>
+            </div>
         </div>
     </main>
     <footer>
         <p>Horneado con mucho amor</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
