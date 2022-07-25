@@ -1,0 +1,34 @@
+/* Cartilla */
+
+.cartilla__contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(4,1fr);
+    grid-column-gap: 4em;
+    grid-row-gap: 4em;
+    justify-items: center;
+}
+
+.titulo--grid{
+    grid-column: 1/-1;
+}
+
+.position--left{
+    grid-column: 2/3;
+}
+
+.position--right{
+    grid-column: 3/4;
+}
+
+.text--size{
+    font-size: 14px;
+}
+
+.images__cartilla--size{
+    height: 300px;
+    width: 470px;
+    border-radius: 20px;
+/*     margin: 0 20px 0 20px; */
+}

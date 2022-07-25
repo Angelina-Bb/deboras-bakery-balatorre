@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
- *{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
+/* Body */
 body{
     background-image: url(../imagenes/fondo.jpg);
     background-size: cover;
@@ -13,81 +14,6 @@ body{
     background-attachment: fixed;
     min-height: 100vh;
     font-family: 'Lora', serif;
-}
-
-/* Header */
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    height: 70px;
-    box-shadow: 0px 4px 60px 50px rgba(0, 0, 0, 0.5);
-}
-
-.logo__debora{
-    font-size: 24px;
-    padding: 0 80px;
-    margin: 10px;
-    color: white;
-    font-weight: 200;
-}
-
-ul{
-    list-style-type: none;
-}
-
-ol{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-.header--ul{
-/*     display: flex; */
-    position: right;
-    margin: 0 3em;
-    padding: 0 1em;
-    width: 100%;
-    gap: 60px;
-}
-
-.menu__label, .menu__input{ 
-    display: none;
-
-}
-
-ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    float: left;
-    display: inline;
-}
-
-/* Animacion del navbar */
-.nav__trns{
-    color: rgba(211, 211, 211, 0.445);
-    
-    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-}
-
-.nav__trns::after{
-    content: "";
-    display: block;
-    background: rgba(211, 211, 211, 0.445);
-    width: 90%;
-    height: 3px;
-    margin-top: 3px;
-    clip-path: var(--clippy);
-    transition: clip-path .5s;
-}
-
-.nav__trns:hover{
-    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 /* Main */
@@ -188,7 +114,7 @@ margin:0 0 2em 0;
     height: 5em;
     padding: 1em;
     font-size: 14px;
-    background: rgb(217, 217, 217, 0.4);
+    background: rgba(217, 217, 217, 0.4);
     border-radius: 20px;
     border: none;
     background-attachment: fixed;
@@ -211,107 +137,7 @@ margin:0 0 2em 0;
     text-align: center;
 }
 
-.images__cartilla--size{
-    height: 300px;
-    width: 470px;
-    border-radius: 20px;
-/*     margin: 0 20px 0 20px; */
-}
-
- /* Galeria */
-
-.galeria__general{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6,auto);
-    grid-auto-rows: 200px;
-    gap: .8em;
-}
-.galeria__titulo--centro{
-    grid-column: 1/-1;
-}
-
-.gal__title--position{
-    grid-column: 1/-1;
-}
-
-.images--size{
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
-}
-
-.galeria__picture{
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
-}
-
-.galeria__picture::before{
-    content:"Cick aqui";
-    position: absolute;
-/*     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
-    height: 200px;
-    width: 200px;
-    background-color: rgba(100, 100, 100, 0.5);
-    border-radius: 20px;
-    transform: translate(100%);
-    transition: transform 0.4s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.galeria__picture:hover::before{
-    transform: translate(0%);
-}
-
-.p__cuadro{
-    font-size: 14px;
-    margin-bottom: 2em;
-    margin-left: 59px;
-    margin-right: 50%;
-    font-weight: normal;
-    margin-top: 1em;
-    text-align: left;
-}
-
-/* Cartilla */
-
-.cartilla__contenedor{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    grid-template-rows: repeat(4,1fr);
-    grid-column-gap: 4em;
-    grid-row-gap: 4em;
-    justify-items: center;
-}
-
-.titulo--grid{
-    grid-column: 1/-1;
-}
-
-.position--left{
-    grid-column: 2/3;
-}
-
-.position--right{
-    grid-column: 3/4;
-}
-
-.text--size{
-    font-size: 14px;
-}
-
-/* Cartilla responsive */
+/* Media queries */
 @media screen and (max-width: 992px){
     .logo__debora{
         font-size: 24px;
@@ -415,19 +241,4 @@ margin:0 0 2em 0;
     .texto__parrafo{
         font-size: 13px;
     }
-}
-
-/* Footer  solucionar el problema con bootstrap*/
-
-footer{
-    width: 100%;
-    height: 45px;
-    color: white;
-    font-size: 16px;
-    bottom: 0;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 1em 0;
-    position: fixed;
 }

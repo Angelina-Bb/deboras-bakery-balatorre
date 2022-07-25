@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debora's Bakery</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <header>
-        <h1 class="logo__debora">Debora's Bakery</h1>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <label for="menu" class="menu__label">
-                <img src="../recursos/menu.svg" class="menu__icon">
-            </label>
-            <input type="checkbox" id="menu" class="menu__input">
+            <a href="./index.html" class="logo__debora navbar-brand">Debora's bakery</a>
+            <button class="navbar-toggler" type="button" data-target="#navbarNav" data-toggle="collapse" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="header--ul navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link nav__trns" href="./index.html">Inicio</a>
                     </li>
