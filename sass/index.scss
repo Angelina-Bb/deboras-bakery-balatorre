@@ -1,8 +1,14 @@
-@import "../sass/misc/normalize";
+//misc
+@import "../sass/misc/variables";
+@import "../sass/misc/globals";
+@import "../sass/misc/mixins";
 
-@import "../sass/partials/header";
+//views
 @import "../sass/views/galeria";
+@import "../sass/views/cartilla";
 @import "../sass/views/acercade";
 @import "../sass/views/formulario";
-@import "../sass/views/incio";
+
+//partials
+@import "../sass/partials/header";
 @import "../sass/partials/footer";

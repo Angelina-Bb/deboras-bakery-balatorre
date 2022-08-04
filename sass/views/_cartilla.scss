@@ -25,10 +25,19 @@
 .text--size{
     font-size: 14px;
 }
+.text--aling--left{
+    text-align: left;
+}
+.text--aling--right{
+    text-align: right;
+}
+
+.txt--left{
+    @extend .text--aling--left
+}
 
 .images__cartilla--size{
     height: 300px;
     width: 470px;
     border-radius: 20px;
-/*     margin: 0 20px 0 20px; */
 }

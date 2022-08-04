@@ -1,0 +1,51 @@
+.form__tittle{
+    font-size: $font-xl;
+    margin-bottom: 2em;
+    font-weight: normal;
+    margin-top: 1em;
+}
+
+.contacto--margin{
+    margin-top: 20px;
+}
+
+.input{
+    margin-top: 2em;
+    font-size: $font-sm;
+    padding: .6em .3em;
+    background: none;
+    border: none;
+    background-color: $color;
+    border-radius: 5px;
+    outline: none;
+    border-bottom: 1px solid $color;
+}
+
+.inputs__textarea--margin{
+    margin: 25px 0 25px 0;
+}
+
+
+.input__presu--position{
+    display: flex;
+    align-items: center;
+}
+
+.input--margin{
+margin:0 0 2em 0;
+}
+
+.margin--right{
+    margin-right: 2em;
+}
+
+.cuadro__texto{
+    width: 49%;
+    height: 5em;
+    padding: 1em;
+    font-size: $font-sm;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 20px;
+    border: none;
+    background-attachment: fixed;
+}
