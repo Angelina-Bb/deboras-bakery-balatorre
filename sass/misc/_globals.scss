@@ -53,18 +53,31 @@ main{
 .cuadro__backg{
     background-color: $background-header;
     width: 90%;
-    height: 80%;
-    margin: auto;
+    height: 79%;
     display: flex;
     margin: 1.5% 0 0 5vw;
     position: absolute;
-    border-radius: 5%;
     border-radius: 20px;
     overflow: hidden scroll;
 }
 
 .cuadro__backg--padding{
     text-align: center;
+}
+
+/*iconos*/
+
+.icons{
+    position: absolute;
+    left: 85%;
+    top: 90%;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 992px){
+    .icons{
+        visibility: hidden;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -80,6 +93,9 @@ main{
     }
     .texto__parrafo{
         font-size: $font-mq-sm;
+    }
+    .icons{
+        visibility: hidden;
     }
 }
 
@@ -101,5 +117,8 @@ main{
     }
     .texto__parrafo{
         font-size: $font-mq-xs;
+    }
+    .icons{
+        visibility: hidden;
     }
 }

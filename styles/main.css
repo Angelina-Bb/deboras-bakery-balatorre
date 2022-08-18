@@ -46,17 +46,26 @@ main {
 .cuadro__backg {
   background-color: rgba(0, 0, 0, 0.5);
   width: 90%;
-  height: 80%;
-  margin: auto;
+  height: 79%;
   display: flex;
   margin: 1.5% 0 0 5vw;
   position: absolute;
-  border-radius: 5%;
   border-radius: 20px;
   overflow: hidden scroll; }
 
 .cuadro__backg--padding {
   text-align: center; }
+
+/*iconos*/
+.icons {
+  position: absolute;
+  left: 85%;
+  top: 90%;
+  margin-top: 5px; }
+
+@media screen and (max-width: 992px) {
+  .icons {
+    visibility: hidden; } }
 
 @media screen and (max-width: 768px) {
   .form__tittle {
@@ -67,7 +76,9 @@ main {
   .texto__bienvenida {
     font-size: 22px; }
   .texto__parrafo {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .icons {
+    visibility: hidden; } }
 
 @media screen and (max-width: 320px) {
   .form__tittle {
@@ -82,7 +93,9 @@ main {
   .texto__bienvenida {
     font-size: 20px; }
   .texto__parrafo {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .icons {
+    visibility: hidden; } }
 
 /* Galeria */
 .images--size {
@@ -374,10 +387,10 @@ main {
   padding: .6em .3em;
   background: none;
   border: none;
-  background-color: rgba(211, 211, 211, 0.568);
+  background-color: rgba(211, 211, 211, 0.8);
   border-radius: 5px;
   outline: none;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.568); }
+  border-bottom: 1px solid rgba(211, 211, 211, 0.8); }
 
 .inputs__textarea--margin {
   margin: 25px 0 25px 0; }
@@ -392,20 +405,7 @@ main {
 .margin--right {
   margin-right: 2em; }
 
-.cuadro__texto {
-  width: 49%;
-  height: 5em;
-  padding: 1em;
-  font-size: 14px;
-  background: rgba(217, 217, 217, 0.4);
-  border-radius: 20px;
-  border: none;
-  background-attachment: fixed; }
-
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 70px;
@@ -428,11 +428,8 @@ a {
   text-decoration: none; }
 
 .header--ul {
-  display: flex;
-  position: right;
   margin: 0 3em;
   padding: 0 1em;
-  width: 100%;
   gap: 60px; }
 
 .menu__label, .menu__input {
@@ -444,6 +441,9 @@ ul li a {
   font-size: 16px;
   float: left;
   display: inline; }
+
+.icons2 {
+  visibility: hidden; }
 
 /* Animacion del navbar */
 .nav__trns {
@@ -468,7 +468,15 @@ ul li a {
     padding: 0; }
   .menu__label {
     display: block;
-    cursor: pointer; } }
+    cursor: pointer; }
+  .icons2 {
+    visibility: visible; }
+  .li__box {
+    position: relative;
+    width: 270px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px; } }
 
 @media screen and (max-width: 768px) {
   .logo__debora {
@@ -478,12 +486,15 @@ ul li a {
     display: block;
     cursor: pointer; }
   .header--ul {
-    position: fixed;
     height: 65px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center; } }
+    position: unset; }
+  .icons2 {
+    visibility: visible; }
+  .li__box {
+    width: 270px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px; } }
 
 @media screen and (max-width: 320px) {
   .logo__debora {
@@ -493,12 +504,15 @@ ul li a {
     display: block;
     cursor: pointer; }
   .header--ul {
-    position: fixed;
-    height: 65px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center; } }
+    height: 65px; }
+  .icons2 {
+    visibility: visible; }
+  .li__box {
+    align-items: center;
+    width: 270px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px; } }
 
 /* Footer  solucionar el problema con bootstrap*/
 footer {

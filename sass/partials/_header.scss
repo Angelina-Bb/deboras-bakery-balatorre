@@ -1,5 +1,4 @@
 header{
-    @include flex(space-around,center);
     background-color: $background-header;
     width: 100vw;
     height: 70px;
@@ -27,11 +26,8 @@ a{
 }
 
 .header--ul{
-    display: flex;
-    position: right;
     margin: 0 3em;
     padding: 0 1em;
-    width: 100%;
     gap: 60px;
 }
 
@@ -48,6 +44,10 @@ ul li a{
     display: inline;
 }
 
+.icons2{
+    visibility: hidden;
+}
+
 /* Animacion del navbar */
 .nav__trns{
     color: rgba(211, 211, 211, 0.445);
@@ -55,17 +55,17 @@ ul li a{
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 
     &::after{
-content: "";
-    display: block;
-    background: rgba(211, 211, 211, 0.445);
-    width: 90%;
-    height: 3px;
-    margin-top: 3px;
-    clip-path: var(--clippy);
-    transition: clip-path .5s;
+        content: "";
+        display: block;
+        background: rgba(211, 211, 211, 0.445);
+        width: 90%;
+        height: 3px;
+        margin-top: 3px;
+        clip-path: var(--clippy);
+        transition: clip-path .5s;
     }
     &:hover{
-    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
 
@@ -79,6 +79,16 @@ content: "";
         display: block;
         cursor: pointer;
     }
+    .icons2{
+        visibility: visible;
+    }
+    .li__box{
+        position: relative;
+        width: 270px;
+        height: 70px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -91,12 +101,17 @@ content: "";
         cursor: pointer;
     }
     .header--ul{
-        position: fixed;
         height: 65px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
+        position: unset;
+    }
+    .icons2{
+        visibility: visible;
+    }
+    .li__box{
+        width: 270px;
+        height: 70px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
     }
 }
 
@@ -110,11 +125,16 @@ content: "";
         cursor: pointer;
     }
     .header--ul{
-        position: fixed;
         height: 65px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
+    }
+    .icons2{
+        visibility: visible;
+    }
+    .li__box{
         align-items: center;
+        width: 270px;
+        height: 70px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
     }
 }
