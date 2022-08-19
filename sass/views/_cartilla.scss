@@ -40,6 +40,32 @@
     height: 350px;
     width: 670px;
     border-radius: 20px;
+    background-size: cover;
+}
+
+.cartilla__photo1{
+    background-image: url("../imagenes/torta-3.jpg");
+    height: 350px;
+    width: 670px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.cartilla__photo2{
+    background-image: url("../imagenes/cupcake-1.jpg");
+    height: 350px;
+    width: 670px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: 50% 60%;
+}
+.cartilla__photo3{
+    background-image: url("../imagenes/trufas-1.jpg");
+    height: 350px;
+    width: 670px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: 50% 75%;
 }
 
 .subtitle{
@@ -51,6 +77,18 @@
 
 @media screen and (max-width: 1440px){
     .images__cartilla--size{
+        height: 350px;
+        width: 570px;
+    }
+    .cartilla__photo1{
+        height: 350px;
+        width: 570px;
+    }
+    .cartilla__photo2{
+        height: 350px;
+        width: 570px;
+    }
+    .cartilla__photo3{
         height: 350px;
         width: 570px;
     }
@@ -72,6 +110,18 @@
 
 @media screen and (max-width: 1024px){
     .images__cartilla--size{
+        height: 350px;
+        width: 350px;
+    }
+    .cartilla__photo1{
+        height: 350px;
+        width: 350px;
+    }
+    .cartilla__photo2{
+        height: 350px;
+        width: 350px;
+    }
+    .cartilla__photo3{
         height: 350px;
         width: 350px;
     }
@@ -99,6 +149,18 @@
         height: 250px;
         width: 250px;
     }
+    .cartilla__photo1{
+        height: 250px;
+        width: 250px;
+    }
+    .cartilla__photo2{
+        height: 250px;
+        width: 250px;
+    }
+    .cartilla__photo3{
+        height: 250px;
+        width: 250px;
+    }
     .cartilla__contenedor{
         grid-template-columns: repeat(3,auto);
         grid-column-gap: 1.5em;
@@ -120,6 +182,18 @@
 
 @media screen and (max-width: 425px){
     .images__cartilla--size{
+            height: 150px;
+            width: 150px;
+        }
+        .cartilla__photo1{
+            height: 150px;
+            width: 150px;
+        }
+        .cartilla__photo2{
+            height: 150px;
+            width: 150px;
+        }
+        .cartilla__photo3{
             height: 150px;
             width: 150px;
         }
