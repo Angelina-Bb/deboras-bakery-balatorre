@@ -28,7 +28,7 @@ a{
 .header--ul{
     margin: 0 3em;
     padding: 0 1em;
-    gap: 60px;
+    gap: 50px;
 }
 
 .menu__label, .menu__input{ 
@@ -102,7 +102,7 @@ ul li a{
     }
     .header--ul{
         height: 65px;
-        position: unset;
+        align-items: center;
     }
     .icons2{
         visibility: visible;
@@ -112,6 +112,7 @@ ul li a{
         height: 70px;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 20px;
+        position: relative;
     }
 }
 

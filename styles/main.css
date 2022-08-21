@@ -195,8 +195,7 @@ main {
     border-radius: 15px; }
   .flex__container {
     display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    padding: 0%; }
+    grid-template-columns: repeat(2, 0.5fr); }
   .galeria__general {
     padding: 0; }
   .sub__tittle2 {
@@ -396,7 +395,7 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  /*     grid-template-rows: repeat(6,1fr); */
   grid-column-gap: 2em;
   grid-row-gap: 1em; }
 
@@ -519,7 +518,7 @@ a {
 .header--ul {
   margin: 0 3em;
   padding: 0 1em;
-  gap: 60px; }
+  gap: 50px; }
 
 .menu__label, .menu__input {
   display: none; }
@@ -576,14 +575,15 @@ ul li a {
     cursor: pointer; }
   .header--ul {
     height: 65px;
-    position: unset; }
+    align-items: center; }
   .icons2 {
     visibility: visible; }
   .li__box {
     width: 270px;
     height: 70px;
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 20px; } }
+    border-radius: 20px;
+    position: relative; } }
 
 @media screen and (max-width: 320px) {
   .logo__debora {

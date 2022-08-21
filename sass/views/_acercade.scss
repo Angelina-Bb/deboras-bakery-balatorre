@@ -25,7 +25,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(6,1fr);
+/*     grid-template-rows: repeat(6,1fr); */
     grid-column-gap: 2em;
     grid-row-gap: 1em;
 }
