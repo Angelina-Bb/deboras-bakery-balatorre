@@ -101,17 +101,21 @@ main {
 .images--size {
   height: 200px;
   width: 200px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  object-fit: cover; }
 
-/* .galeria__general{
-    width: 100%;
-} */
 .flex__container {
   display: flex;
   flex: 25%;
   flex-wrap: wrap;
   padding: 20px;
   justify-content: center; }
+
+.galeria__general {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-left: 8%; }
 
 .sub__tittle2 {
   font-size: 24px; }
@@ -156,6 +160,11 @@ main {
     height: 150px;
     width: 150px;
     border-radius: 20px; }
+  .flex__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .galeria__general {
+    padding: 0; }
   .sub__tittle2 {
     font-size: 15px; }
   .galeria__picture {
@@ -173,6 +182,40 @@ main {
     width: 150px;
     background-color: rgba(100, 100, 100, 0.5);
     border-radius: 20px;
+    transform: translate(100%);
+    transition: transform 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 320px) {
+  .images--size {
+    height: 110px;
+    width: 110px;
+    border-radius: 15px; }
+  .flex__container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    padding: 0%; }
+  .galeria__general {
+    padding: 0; }
+  .sub__tittle2 {
+    font-size: 15px; }
+  .galeria__picture {
+    margin: 15px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 110px;
+    width: 110px;
+    border-radius: 15px; }
+  .galeria__picture::before {
+    content: "Click aqui";
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 15px;
     transform: translate(100%);
     transition: transform 0.4s;
     display: flex;
@@ -207,14 +250,8 @@ main {
 .text--aling--right {
   text-align: right; }
 
-.images__cartilla--size {
-  height: 350px;
-  width: 670px;
-  border-radius: 20px;
-  background-size: cover; }
-
 .cartilla__photo1 {
-  background-image: url("../imagenes/torta-3.jpg");
+  background-image: url("../imagenes/torta-grupo.jpg");
   height: 350px;
   width: 670px;
   border-radius: 20px;
@@ -222,7 +259,7 @@ main {
   background-position: 50% 50%; }
 
 .cartilla__photo2 {
-  background-image: url("../imagenes/cupcake-1.jpg");
+  background-image: url("../imagenes/cupcake-0.jpg");
   height: 350px;
   width: 670px;
   border-radius: 20px;
@@ -230,7 +267,7 @@ main {
   background-position: 50% 60%; }
 
 .cartilla__photo3 {
-  background-image: url("../imagenes/trufas-1.jpg");
+  background-image: url("../imagenes/trufa-0.jpg");
   height: 350px;
   width: 670px;
   border-radius: 20px;
@@ -244,9 +281,6 @@ main {
   margin-top: 1em; }
 
 @media screen and (max-width: 1440px) {
-  .images__cartilla--size {
-    height: 350px;
-    width: 570px; }
   .cartilla__photo1 {
     height: 350px;
     width: 570px; }
@@ -268,12 +302,10 @@ main {
     font-size: 22px; } }
 
 @media screen and (max-width: 1024px) {
-  .images__cartilla--size {
-    height: 350px;
-    width: 350px; }
   .cartilla__photo1 {
     height: 350px;
-    width: 350px; }
+    width: 350px;
+    background-position: 50% 70%; }
   .cartilla__photo2 {
     height: 350px;
     width: 350px; }
@@ -294,12 +326,10 @@ main {
     font-size: 15px; } }
 
 @media screen and (max-width: 768px) {
-  .images__cartilla--size {
-    height: 250px;
-    width: 250px; }
   .cartilla__photo1 {
     height: 250px;
-    width: 250px; }
+    width: 250px;
+    background-position: 50% 70%; }
   .cartilla__photo2 {
     height: 250px;
     width: 250px; }
@@ -320,12 +350,10 @@ main {
     font-size: 12px; } }
 
 @media screen and (max-width: 425px) {
-  .images__cartilla--size {
-    height: 150px;
-    width: 150px; }
   .cartilla__photo1 {
     height: 150px;
-    width: 150px; }
+    width: 150px;
+    background-position: 50% 70%; }
   .cartilla__photo2 {
     height: 150px;
     width: 150px; }

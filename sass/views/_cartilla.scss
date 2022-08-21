@@ -36,15 +36,8 @@
     @extend .text--aling--left
 }
 
-.images__cartilla--size{
-    height: 350px;
-    width: 670px;
-    border-radius: 20px;
-    background-size: cover;
-}
-
 .cartilla__photo1{
-    background-image: url("../imagenes/torta-3.jpg");
+    background-image: url("../imagenes/torta-grupo.jpg");
     height: 350px;
     width: 670px;
     border-radius: 20px;
@@ -52,7 +45,7 @@
     background-position: 50% 50%;
 }
 .cartilla__photo2{
-    background-image: url("../imagenes/cupcake-1.jpg");
+    background-image: url("../imagenes/cupcake-0.jpg");
     height: 350px;
     width: 670px;
     border-radius: 20px;
@@ -60,7 +53,7 @@
     background-position: 50% 60%;
 }
 .cartilla__photo3{
-    background-image: url("../imagenes/trufas-1.jpg");
+    background-image: url("../imagenes/trufa-0.jpg");
     height: 350px;
     width: 670px;
     border-radius: 20px;
@@ -76,10 +69,6 @@
 }
 
 @media screen and (max-width: 1440px){
-    .images__cartilla--size{
-        height: 350px;
-        width: 570px;
-    }
     .cartilla__photo1{
         height: 350px;
         width: 570px;
@@ -109,13 +98,10 @@
 }
 
 @media screen and (max-width: 1024px){
-    .images__cartilla--size{
-        height: 350px;
-        width: 350px;
-    }
     .cartilla__photo1{
         height: 350px;
         width: 350px;
+        background-position: 50% 70%;
     }
     .cartilla__photo2{
         height: 350px;
@@ -145,13 +131,10 @@
 }
 
 @media screen and (max-width: 768px){
-.images__cartilla--size{
-        height: 250px;
-        width: 250px;
-    }
     .cartilla__photo1{
         height: 250px;
         width: 250px;
+        background-position: 50% 70%;
     }
     .cartilla__photo2{
         height: 250px;
@@ -181,13 +164,10 @@
 }
 
 @media screen and (max-width: 425px){
-    .images__cartilla--size{
-            height: 150px;
-            width: 150px;
-        }
         .cartilla__photo1{
             height: 150px;
             width: 150px;
+            background-position: 50% 70%;
         }
         .cartilla__photo2{
             height: 150px;
