@@ -582,11 +582,42 @@ ul li a {
     visibility: visible; }
   .li__box {
     width: 270px;
-    height: 70px;
+    height: 80px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     position: relative; }
   .bkg__menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 60px 60px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    position: relative; } }
+
+@media screen and (max-width: 425px) {
+  .logo__debora {
+    font-size: 24px;
+    padding: 0; }
+  .menu__label {
+    display: block;
+    cursor: pointer; }
+  .header--ul {
+    margin-top: 10%;
+    height: 65px;
+    align-items: center; }
+  .icons2 {
+    visibility: visible; }
+  .li__box {
+    width: 270px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: relative; }
+  .bkg__menu {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 700px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -608,15 +639,15 @@ ul li a {
   .li__box {
     align-items: center;
     width: 270px;
-    height: 70px;
+    height: 80px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px; }
   .bkg__menu {
-    width: 100%;
+    width: 100vw;
     height: 700px;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0px 60px 60px 50px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(4x);
     position: relative; } }
 
 /* Footer  solucionar el problema con bootstrap*/
