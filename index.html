@@ -14,10 +14,10 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a href="./index.html" class="logo__debora navbar-brand">Debora's bakery</a>
-            <button class="navbar-toggler" type="button" data-target="#navbarNav" data-toggle="collapse" aria-expanded="false" aria-label="toggle navigation">
+            <button onclick="myFunction()" class="navbar-toggler" type="button" data-target="#navbarNav" data-toggle="collapse" aria-expanded="false" aria-label="toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse bkg__menu" id="navbarNav">
                 <ul class="header--ul navbar-nav ml-auto">
                     <li class="nav-item active li__box">
                         <a class="nav-link nav__trns" href="./index.html">Inicio</a>
@@ -51,7 +51,7 @@
         </nav>
     </header>
     <main>
-        <div class="parrafo--grid">
+        <div id="myDIV" class="parrafo--grid">
             <h2 class="texto__bienvenida texto--padding">Bienvenidos</h2>
                 <p class="texto__parrafo parrafo--color">A nuestro mundo de sabores donde te prometemos que vas a tener una experiencia de verdadero placer. No solo por nuestros deliciosos pasteles, sino que tambien por nuestra linea exclusiva de postres preparados por nuestros chefs y sus asistendes.</p>
         </div>
@@ -73,5 +73,15 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+        }
+        </script>
 </body>
 </html>
