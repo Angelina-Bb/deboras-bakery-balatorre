@@ -90,6 +90,11 @@ ul li a{
         background: rgba(0, 0, 0, 0.5);
         border-radius: 10px;
     }
+    .nav__trns{
+        &::after{
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -125,6 +130,11 @@ ul li a{
         box-shadow: 0px 60px 60px 50px rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(4px);
         position: relative;
+    }
+    .nav__trns{
+        &::after{
+            display: none;
+        }
     }
 }
 
@@ -162,6 +172,11 @@ ul li a{
         backdrop-filter: blur(4px);
         position: relative;
     }
+    .nav__trns{
+        &::after{
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -193,5 +208,10 @@ ul li a{
         box-shadow: 0px 60px 60px 50px rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(4x);
         position: relative;
+    }
+    .nav__trns{
+        &::after{
+            display: none;
+        }
     }
 }
