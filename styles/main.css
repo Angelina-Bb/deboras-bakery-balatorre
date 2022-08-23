@@ -147,6 +147,7 @@ main {
 
 @media screen and (max-width: 1440px) {
   .flex__container {
+    padding: 0;
     flex: 60%; }
   .sub__tittle2 {
     font-size: 20px; } }
@@ -161,6 +162,7 @@ main {
     width: 150px;
     border-radius: 20px; }
   .flex__container {
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
   .galeria__general {
@@ -194,6 +196,7 @@ main {
     width: 110px;
     border-radius: 15px; }
   .flex__container {
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 0.5fr); }
   .galeria__general {
@@ -546,7 +549,7 @@ ul li a {
     height: 3px;
     margin-top: 3px;
     clip-path: var(--clippy);
-    transition: clip-path .5s; }
+    transition: clip-path .3s; }
   .nav__trns:hover {
     --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%); }
 
